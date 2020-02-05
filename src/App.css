@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Fonts Colors */
+
+.color-purple-extralight {
+    color: #c8c8fd;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.color-purple-light {
+    color: #cdbaf2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.color-purple {
+    color: #713bdb;
 }
 
-.App-link {
-  color: #61dafb;
+.color-green {    
+    color: #33d69f;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.color-orange-light {
+    color: #f7c8c3;
+}
+
+.color-orange {
+    color: #ff8c56;
+}
+
+.color-blue {
+    color: #49b8ff;
+}
+
+.color-pink-loght {
+    color: #ffc0d0;
+}
+
+.color-pink {
+    color: #fb4f7f;
+}
+
+.color-yellow-light {
+    color: #fef4b5;
+}
+
+.color-yellow {
+    color: #fddd0e;
+}
+
+.color-red {
+    color: #f8321e;
+}
+
+/* Font Weight */
+.extra-ligh {
+    font-style: italic;
+    font-family: 200;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.regular {
+    font-weight: normal;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.extra-bold {
+    font-weight: 800;
+}
+
+.black {
+    font-weight: 900;
+}
+
+
+/* Fonts Size */
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+span.h7 {
+    font-size: 16px;
+}
+
+span.h8 {
+    font-size: 14px;
+}
+
+span.h9 { 
+    font-size: 12px;
+}
+
+/* Backgrounds Colors */
+.bg-green {
+    background-color: #33d69f;
+}
+
+.bg-extra-light {
+    background-color: #f5f6fa;
+}
+
+.bg-gray-light {
+    background-color: #f2f2f2;
+}
+
+.bg-gray-regular {
+    background-color: #cacaca;
+}
+
+.bg-extra-medium {
+    background-color: #9fa4b8;
+}
+
+.bg-extra-semidark {
+    background-color: #646464;
+}
+
+.bg-extra-dark {
+    background-color: #373737;
+}
+
+
+/* Padding */
+
+.pa0 {
+    padding: 0px;
+}
+
+/* Margin */
+
+.ma0 {
+    margin: 0px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mt40 {
+    margin-top: 40px
 }
