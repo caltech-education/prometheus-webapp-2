@@ -1,42 +1,46 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.scss'
-import InputsLogin from '../../components/InputsLogin'
-import Logo from '../../assets/imgs/Logo/Logo@3x.png'
+import LoginRequired from '../../actions/login'
 
-// Icons
-import IconBuilding from '../../assets/svgs/Icon_awesome-building/Icon awesome-building@3x.png'
-import IconTeacher from '../../assets/svgs/Icon_awesome-chalkboard-teacher/Icon awesome-chalkboard-teacher@3x.png'
-import IconSchool from '../../assets/svgs/Icon_awesome-school/Icon awesome-school@3x.png'
-import IconIonicSchool from '../../assets/svgs/Icon_ionic-md-school/Icon ionic-md-school@3x.png'
+import Logo from '../../assets/imgs/Logo/Logo@3x.png'
+import Radio from '../../components/Radio'
+import Button from '../../components/Button'
+import Checkbox from '../../components/Checkbox'
 
 export default function Login() {
+    const [username, setUsername] = useState('')
+    const [password, setpassword] = useState('')
+
     return (
         <div id="login" className="login">
             <section className="container-logo">
                 <img width="100%" height="100%" src={Logo} alt="Logo" />
             </section>
 
-            <section className="mt40 mb20">
-                <h5 className="color-purple semi-bold ma0">Seja</h5>
-                <h5 className="color-purple bold ma0">Bem-vindo</h5>
-            </section>
+            <div className="container-informations">
+                <section className="mt40 mb20">
+                    <h5 className="color-purple semi-bold ma0">Seja</h5>
+                    <h5 className="color-purple bold ma0">Bem-vindo</h5>
+                </section>
 
-            <section className="icons">
-                <img src={IconBuilding} />
-                <img src={IconTeacher} />
-                <img src={IconSchool} />
-                <img src={IconIonicSchool} />
-            </section>
+                <section className="icons mb20">
+                    <Radio />
+                </section>
+            </div>
             
             <form>
-                <InputsLogin />
-                <span>
-                    <input type="checkbox"></input>
-                    Lembrar login
-                </span>
-                <a href="/pass-req">Esqueci minha senha</a>
-                <button>Entrar</button>
+                <div className="contain-inputs">
+                    <input onChange={e => setUsername(e.target.value)} className="login f12" />
+                    <input onChange={e => setpassword(e.target.value)} className="pass" type="password" />
+                </div>
+                <div className="action mb40">
+                    <span className="check">
+                        <Checkbox text="Lembrar login"/>
+                    </span>
+                    <a href="/pass-req">Esqueci minha senha</a>
+                </div>
             </form>
+            <Button onClick={() => LoginRequired(username, password)} text="Entrar"/>
        </div>
     )
 }

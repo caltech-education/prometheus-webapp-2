@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
     margin: 0px;
 }
 
@@ -165,6 +165,10 @@ span.h9 {
 
 .mb20 {
     margin-bottom: 20px;
+}
+
+.mb40 {
+    margin-bottom: 40px;
 }
 
 .mt40 {

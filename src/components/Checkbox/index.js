@@ -1,7 +1,14 @@
 import React from 'react'
+import './style.scss'
 
-export default function Checkbox() {
+export default function Checkbox({text}) {
     return (
-        <h1></h1>
+        <>
+            <label className="container">
+                <span className="text-checkbox">{text}</span>
+                <input type="checkbox" />
+                <span className="checkmark"></span>
+            </label>
+        </>
     )
 }

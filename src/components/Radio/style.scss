@@ -1,0 +1,32 @@
+.checkbox-container {
+  display: flex;
+  justify-content: space-between;
+
+  .img-container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #33d69f;
+    opacity: 0.3;
+    width: 40px;
+    padding: 7px;
+    height: 40px;
+    border-radius: 7px;
+  }
+
+}
+
+.radio-img  > input { 
+  display:none;
+  width: 40px;
+  height: 40px;
+}
+
+.radio-img  > img{
+  cursor:pointer;
+  border:2px solid transparent;
+}
+
+.radio-img  > input:checked + .img-container{ 
+    opacity: 1;
+}
